@@ -1,3 +1,5 @@
+const allApps = document.querySelectorAll(".phone-apps-powered");
+
 const phone = {
   brand: "iphone",
   model: 14,
@@ -47,3 +49,20 @@ const phone = {
     } else console.log("Your phone is allready on");
   },
 };
+
+//Adding event listeners to all apps
+allApps.forEach((app) =>
+  app.addEventListener("click", function (e) {
+    this.classList.add("using-app");
+
+    allApps.forEach((app) => {
+      if (app != this) app.style.display = "none";
+    });
+
+    setTimeout(() => {
+      console.log(this + " this");
+      this.classList.remove("using-app");
+      allApps.forEach((app) => (app.style.display = "flex"));
+    }, 5000);
+  })
+);

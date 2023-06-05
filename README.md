@@ -2,18 +2,17 @@
 
 # Programming Foundations CA
 
-# Phone Object
+# Calculator Object
 
 This object has the following properties:
 
-- Brand (String): The manufacturer of the phone
-- Model (Number): The modelnumber of the phone
-- Color (String): The color of the phone
-- Battery (Number): The current battery of the phone in %
-- Powered (Boolean): Checking if the phone is currently on or off
-- Apps (Array): Different apps on the phone
+- Brand (String): Shows the calculators brand name.
+- Model (Number / int): Shows the calculators model number.
+- Buttons (Array): all calculator buttons are added in this (not hard coded but will be added once code runs using forEach)
+- Powered (Boolean): Returns true if the calculator is currently powered on and false if it is not.
 
-- ChargeBattery(function): No input. Charges the phones battery with 20%
-- makeCall(function): Has 1 input which is either name of caller or number. Calling name / number of input.
-- checkBattery(function): No input. Checks current battery %.
-- powerPhoneOn (function): No input. If phone is off and has atleast 20% battery the phone will turn back on.
+- equalBtn (Function): When equal button is pressed it takes the current calculation and sums it up. It then displays the result.
+
+- display (function): Whenever a calculation button is pressed. It first checks if calculator is powered = true or false. if true it will display numbers pressed. If its false then you will get a message saying "Power is off".
+
+- togglePower (function): Whenever PWR button is pressed. If pressed while powered is true then it returns false. If it is false it will return true (if false calculator can not be used).

@@ -2,13 +2,62 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Programming Foundations CA</title>
-    <link href="css/style.css" rel="stylesheet" />
-    <link rel="icon" href="data:;base64,=" />
-  </head>
 
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculator</title>
+  </head>
   <body>
-    <script src="js/phone.js"></script>
+    <div class="calc-container">
+      <form>
+        <div class="calc-display-container">
+          <input type="text" name="calc-display" value="" />
+        </div>
+        <div class="btns-row-container">
+          <input
+            type="button"
+            value="PWR"
+            class="double-width-btn red-btn"
+            id="pwr-btn"
+          />
+          <input type="button" value="AC" / id="all-clear" class="red-btn">
+          <input type="button" value="/" class="calc-btns yellow-btn" />
+        </div>
+
+        <div class="btns-row-container">
+          <input type="button" value="9" class="calc-btns" />
+          <input type="button" value="8" class="calc-btns" />
+          <input type="button" value="7" class="calc-btns" />
+          <input type="button" value="*" class="calc-btns yellow-btn" />
+        </div>
+
+        <div class="btns-row-container">
+          <input type="button" value="6" class="calc-btns" />
+          <input type="button" value="5" class="calc-btns" />
+          <input type="button" value="4" class="calc-btns" />
+          <input type="button" value="-" class="calc-btns yellow-btn" />
+        </div>
+
+        <div class="btns-row-container">
+          <input type="button" value="3" class="calc-btns" />
+          <input type="button" value="2" class="calc-btns" />
+          <input type="button" value="1" class="calc-btns" />
+          <input type="button" value="+" / class="calc-btns yellow-btn">
+        </div>
+        <div class="btns-row-container">
+          <input type="button" value="0" class="calc-btns" />
+          <input type="button" value="." class="calc-btns" />
+          <input
+            type="button"
+            value="="
+            class="double-width-btn green-btn"
+            id="calc-equal"
+          />
+        </div>
+      </form>
+    </div>
+
+    <script src="calculator.js"></script>
   </body>
 </html>
